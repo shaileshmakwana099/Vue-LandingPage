@@ -21,12 +21,13 @@
     "vue-cool-lightbox": "^1.0.10",
     "vue-faq-accordion": "^1.3.0",
     "vue-feather": "^1.0.0",
+    "vue-i18n": "^8.11.2",
     "vue-odometer": "^1.0.2",
     "vue-router": "^3.1.5",
     "vue-slick": "^1.1.15",
     "vue-toasted": "^1.1.27",
-    "vuex": "^3.1.2",
-    "vue-i18n": "^8.11.2"
+    "vuesax": "^3.12.2",
+    "vuex": "^3.1.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.1.0",

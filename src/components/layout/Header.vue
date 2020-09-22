@@ -17,6 +17,7 @@
                             </li>
                             <li class="nav-item">
                                 <router-link to="/faq" class="nav-link">{{$t('FAQ')}}</router-link>
+                                <a href="#faq" ></a>
                             </li>
                             <li class="nav-item">
                                 <router-link to="/blog" class="nav-link">{{$t('Blog')}}</router-link>

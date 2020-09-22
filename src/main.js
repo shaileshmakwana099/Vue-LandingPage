@@ -5,6 +5,11 @@ import VueFeather from 'vue-feather';
 import vWow from 'v-wow';
 import VueCarousel from 'vue-carousel';
 import Toasted from 'vue-toasted';
+
+//Vuesax component framework
+import Vuesax from 'vuesax';
+import 'vuesax/dist/vuesax.css'; // Vuesax
+
 import App from './App.vue'
 import './assets/style/custom.scss';
 import { router } from './router';
@@ -20,6 +25,7 @@ Vue.use(VueRouter);
 Vue.use(vWow);
 Vue.use(VueCarousel);
 Vue.use(Toasted)
+Vue.use(Vuesax);
 
 new Vue({
   store,

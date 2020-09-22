@@ -3,7 +3,7 @@
         <Banner></Banner>
         <Services></Services>
         <HowItWorks></HowItWorks>
-        <Faq />
+        <Faq id="faq"/>
         <Feadback></Feadback>
         <BlogSection />
         <Cta />
