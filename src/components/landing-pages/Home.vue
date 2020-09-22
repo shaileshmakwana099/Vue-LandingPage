@@ -6,7 +6,15 @@
         <Faq id="faq"/>
         <Feadback></Feadback>
         <BlogSection />
-        <Cta />
+
+        <section class="agency-cta-area ptb-80">
+            <div class="container">
+                <div class="agency-cta-content">
+                    <h2>{{$t('CallSectionTxt')}}</h2>
+                    <a href="#" class="btn btn-gradient">{{$t('InviteNow')}}</a>
+                </div>
+            </div>
+        </section>
     </div>
 </template>
 
@@ -17,7 +25,6 @@ import HowItWorks from './home/HowItWorks';
 import Faq from "./home/Faq";
 import Feadback from './home/Feedback';
 import BlogSection from './home/BlogSection';
-import Cta from './home/Cta';
 
 export default {
     name: 'Developer',
@@ -28,7 +35,6 @@ export default {
         Faq,
         Feadback,
         BlogSection,
-        Cta,
     }
 }
 </script>

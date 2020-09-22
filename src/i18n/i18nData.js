@@ -48,7 +48,7 @@ export default {
         BlogTitle: 'Latest news about government funding',
         BlogSubTitle: 'We will regularly provide news about government funding, such as technology vouchers (TVP), special funds (BUD).',
         CallSectionTxt: "Still want to wait for your supplier's offer?",
-
+        InviteNow: 'Invite Now'
     },
     hk: {
         Home: '首頁',
@@ -99,5 +99,6 @@ export default {
         BlogTitle: '最新關於政府資助消息',
         BlogSubTitle: '我們會定時提供有關政府資助的消息，例如科技券 (TVP)﹑專項基金 (BUD)。',
         CallSectionTxt: '還想慢慢苦等你的供應商的報價?',
+        InviteNow: '立即邀請'
     }
 }
