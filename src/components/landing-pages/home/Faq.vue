@@ -28,13 +28,13 @@
                     <vs-col class="col-md-4" style="align-self:center">
                         <img src="../../../assets/img/faq1.jpg" alt="image"/>
                     </vs-col>
-                    <v-col class="col-md-8">
+                    <vs-col class="col-md-8">
                         <div class="faq-accordion">
                             <VueFaqAccordion
                                     :items="myItems"
                             />
                         </div>
-                    </v-col>
+                    </vs-col>
                 </vs-row>
             </div>
 		</section>

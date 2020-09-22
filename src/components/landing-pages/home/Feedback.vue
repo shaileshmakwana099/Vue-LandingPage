@@ -3,104 +3,24 @@
     <section class="team-area repair-team-area ptb-80 bg-f9f6f6">
         <div class="container">
             <div class="section-title">
-                <h2>Our Awesome Team</h2>
+                <h2>{{$t('FeedbackTitle')}}</h2>
                 <div class="bar"></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>{{$t('FeedbackSubTitle')}}</p>
             </div>
 
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-sm-6">
+                <div v-for="item in myItems" :key="item.id" class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-team">
                         <div class="team-image">
-                            <img src="../../../assets/img/repair-team-image/1.jpg" alt="image">
+                            <img :src="imgUrl(item.img)" alt="image">
                         </div>
 
                         <div class="team-content">
                             <div class="team-info">
-                                <h3>Josh Buttler</h3>
-                                <span>CEO & Founder</span>
+                                <h3>{{item.title}}</h3>
+                                <span>{{item.subTitle}}</span>
                             </div>
-
-                            <ul>
-                                <li><a href="#"><feather type="facebook"></feather></a></li>
-                                <li><a href="#"><feather type="twitter"></feather></a></li>
-                                <li><a href="#"><feather type="linkedin"></feather></a></li>
-                                <li><a href="#"><feather type="gitlab"></feather></a></li>
-                            </ul>
-
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team">
-                        <div class="team-image">
-                            <img src="../../../assets/img/repair-team-image/2.jpg" alt="image">
-                        </div>
-
-                        <div class="team-content">
-                            <div class="team-info">
-                                <h3>Alex Maxwel</h3>
-                                <span>Marketing Manager</span>
-                            </div>
-
-                            <ul>
-                                <li><a href="#"><feather type="facebook"></feather></a></li>
-                                <li><a href="#"><feather type="twitter"></feather></a></li>
-                                <li><a href="#"><feather type="linkedin"></feather></a></li>
-                                <li><a href="#"><feather type="gitlab"></feather></a></li>
-                            </ul>
-
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team">
-                        <div class="team-image">
-                            <img src="../../../assets/img/repair-team-image/3.jpg" alt="image">
-                        </div>
-
-                        <div class="team-content">
-                            <div class="team-info">
-                                <h3>Janny Cotller</h3>
-                                <span>Web Developer</span>
-                            </div>
-
-                            <ul>
-                                <li><a href="#"><feather type="facebook"></feather></a></li>
-                                <li><a href="#"><feather type="twitter"></feather></a></li>
-                                <li><a href="#"><feather type="linkedin"></feather></a></li>
-                                <li><a href="#"><feather type="gitlab"></feather></a></li>
-                            </ul>
-
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team">
-                        <div class="team-image">
-                            <img src="../../../assets/img/repair-team-image/4.jpg" alt="image">
-                        </div>
-
-                        <div class="team-content">
-                            <div class="team-info">
-                                <h3>Jason Statham</h3>
-                                <span>UX/UI Designer</span>
-                            </div>
-
-                            <ul>
-                                <li><a href="#"><feather type="facebook"></feather></a></li>
-                                <li><a href="#"><feather type="twitter"></feather></a></li>
-                                <li><a href="#"><feather type="linkedin"></feather></a></li>
-                                <li><a href="#"><feather type="gitlab"></feather></a></li>
-                            </ul>
-
-                            <p>Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum. </p>
+                            <p>{{item.content}}</p>
                         </div>
                     </div>
                 </div>
@@ -112,6 +32,45 @@
 
 <script>
 export default {
-    name: 'Team'
+    name: 'Feedback',
+    data(){
+       return {
+           myItems: [
+               {
+                   id: 1,
+                   img: '1.jpg',
+                   title: 'Josh Buttler',
+                   subTitle: 'CEO & Founder',
+                   content: 'Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.'
+               },
+               {
+                   id: 2,
+                   img: '1.jpg',
+                   title: 'Josh Buttler',
+                   subTitle: 'CEO & Founder',
+                   content: 'Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.'
+               },
+               {
+                   id: 3,
+                   img: '1.jpg',
+                   title: 'Josh Buttler',
+                   subTitle: 'CEO & Founder',
+                   content: 'Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.'
+               },
+               {
+                   id: 4,
+                   img: '1.jpg',
+                   title: 'Josh Buttler',
+                   subTitle: 'CEO & Founder',
+                   content: 'Risus commodo viverra maecenas accumsan lacus vel facilisis quis ipsum.'
+               }
+           ]
+       }
+    },
+    methods:{
+        imgUrl(url){
+            return require('../../../assets/img/feedback/' + url)
+        }
+    }
 }
 </script>
