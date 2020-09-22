@@ -31,8 +31,8 @@
                     </b-collapse>
                     <div class="others-option">
                         <i18n />
-                        <a href="#" class="btn btn-light" style="margin-left: 10px">RFQ</a>
-                        <a href="#" class="btn btn-primary">Login</a>
+                        <a href="#" class="btn btn-light" style="margin-left: 10px">{{$t('RFQ')}}</a>
+                        <a href="#" class="btn btn-primary">{{$t('Login')}}</a>
                     </div>
                 </nav>
             </div>

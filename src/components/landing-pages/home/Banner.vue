@@ -7,10 +7,11 @@
                     <div class="row h-100 justify-content-center align-items-center">
                         <div class="col-lg-5">
                             <div class="hero-content">
-                                <h1>Built for Developers</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
+                                <h2>{{$t('BannerFormTxtOne')}}</h2>
+                                <h2 style="white-space: pre-line">{{$t('BannerFormTxtTwo')}}</h2>
+                                <p>{{$t('BannerPlatformTxt')}}</p>
                                 
-                                <a href="#" class="btn btn-primary">Get Started</a>
+                                <a href="#" class="btn btn-primary">{{$t('QuoteNow')}}</a>
                             </div>
                         </div>
 
