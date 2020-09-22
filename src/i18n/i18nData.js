@@ -87,6 +87,7 @@ export default {
         WhyUsColTwo: '一站式平台，你將可登入後台，查詢邀請狀況，哪個供應商接受邀請，報價狀況，不需接觸。',
         WhyUsColThr: '平台管理員將管理每一個案，作適時協助。如項目沒有在7日內配對成功，將100%退款。',
         WhyUsColFor: '為公平公正，平台管理員不會透露其他供應商之報價及資料，報價 100%由供應商決定。',
+        OneStopPlatformOperation: '一站式平台運作',
         HowItWorksOne: '線上提交報價邀請',
         HowItWorksTwo: '供應商配對',
         HowItWorksThr: '收到項目報價',
