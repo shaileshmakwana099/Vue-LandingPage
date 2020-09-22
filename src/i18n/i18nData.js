@@ -50,7 +50,7 @@ export default {
         CallSectionTxt: "Still want to wait for your supplier's offer?",
 
     },
-    ch: {
+    hk: {
         Home: '首頁',
         FAQ : 'FAQ',
         Blog: '最新消息',

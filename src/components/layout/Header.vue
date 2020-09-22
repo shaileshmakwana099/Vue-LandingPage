@@ -17,7 +17,6 @@
                             </li>
                             <li class="nav-item">
                                 <router-link to="/faq" class="nav-link">{{$t('FAQ')}}</router-link>
-                                <a href="#faq" ></a>
                             </li>
                             <li class="nav-item">
                                 <router-link to="/blog" class="nav-link">{{$t('Blog')}}</router-link>
@@ -30,7 +29,6 @@
                             </li>
                         </ul>
                     </b-collapse>
-
                     <div class="others-option">
                         <i18n />
                         <a href="#" class="btn btn-light" style="margin-left: 10px">RFQ</a>
@@ -75,4 +73,4 @@
             }
         }
     }
-</script>s
+</script>
