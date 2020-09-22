@@ -1,11 +1,7 @@
 <template>
   <div>
-    <HeaderTwo v-if="currentUrl == '/web-hosting'"></HeaderTwo>
-    <HeaderThree v-else-if="currentUrl == '/machine-learning'"></HeaderThree>
-    <HeaderFour v-else-if="currentUrl == '/digital-agency'"></HeaderFour>
-    <HeaderFour v-else-if="currentUrl == '/digital-agency'"></HeaderFour>
-    <div v-else-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
-    <Header v-else></Header>
+    <div v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
+    <Header ></Header>
     <PreLoader v-if="isLoading" />
     <router-view></router-view>
     <div v-if="currentUrl == '/not-found' || currentUrl == '/coming-soon'"></div>
@@ -15,15 +11,12 @@
 
 <script>
 import Header from './components/layout/Header';
-import HeaderTwo from './components/layout/HeaderTwo';
-import HeaderThree from './components/layout/HeaderThree';
-import HeaderFour from './components/layout/HeaderFour';
 import Footer from './components/layout/Footer';
 import PreLoader from './components/layout/PreLoader';
 export default {
   name: 'app',
   components: {
-    Header, HeaderTwo, HeaderThree, HeaderFour, Footer, PreLoader
+    Header, Footer, PreLoader
   },
 
   data() {
