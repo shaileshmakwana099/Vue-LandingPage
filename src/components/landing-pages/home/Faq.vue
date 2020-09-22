@@ -9,7 +9,7 @@
                     </div>
                 </div>
 			</div>
-			
+
 			<div class="shape1"><img src="../../../assets/img/shape1.png" alt="shape"></div>
 			<div class="shape2 rotateme"><img src="../../../assets/img/shape2.svg" alt="shape"></div>
 			<div class="shape3"><img src="../../../assets/img/shape3.svg" alt="shape"></div>
@@ -24,11 +24,18 @@
         <!-- Start FAQ Area -->
 		<section class="faq-area ptb-80">
 			<div class="container">
-				<div class="faq-accordion">
-                    <VueFaqAccordion 
-                        :items="myItems"
-                    />
-                </div>
+                <vs-row>
+                    <vs-col class="col-md-4" style="align-self:center">
+                        <img src="../../../assets/img/faq1.jpg" alt="image"/>
+                    </vs-col>
+                    <v-col class="col-md-8">
+                        <div class="faq-accordion">
+                            <VueFaqAccordion
+                                    :items="myItems"
+                            />
+                        </div>
+                    </v-col>
+                </vs-row>
             </div>
 		</section>
 		<!-- End FAQ Area -->
