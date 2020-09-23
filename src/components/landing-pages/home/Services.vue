@@ -10,7 +10,7 @@
 
             <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-iot-box">
+                    <div :class="$i18n.locale === 'en'?'single-iot-box Service-h-a':'single-iot-box Service-h-b'">
                         <div class="icon">
                             <img src="../../../assets/img/icon1.png" alt="image">
                         </div>
@@ -20,7 +20,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-iot-box">
+                    <div :class="$i18n.locale === 'en'?'single-iot-box Service-h-a':'single-iot-box Service-h-b'">
                         <div class="icon">
                             <img src="../../../assets/img/icon2.png" alt="image">
                         </div>
@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-iot-box">
+                    <div :class="$i18n.locale === 'en'?'single-iot-box Service-h-a':'single-iot-box Service-h-b'">
                         <div class="icon">
                             <img src="../../../assets/img/icon3.png" alt="image">
                         </div>
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-6 offset-lg-0 offset-md-3 offset-sm-3">
-                    <div class="single-iot-box">
+                    <div :class="$i18n.locale === 'en'?'single-iot-box Service-h-a':'single-iot-box Service-h-b'">
                         <div class="icon">
                             <img src="../../../assets/img/icon8.png" alt="image">
                         </div>
@@ -60,7 +60,10 @@
     }
 </script>
 <style scoped>
-    .single-iot-box {
+    .Service-h-a {
         min-height: 461px;
+    }
+    .Service-h-b {
+        min-height: 354px;
     }
 </style>
