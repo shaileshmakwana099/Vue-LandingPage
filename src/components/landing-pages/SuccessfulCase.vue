@@ -5,7 +5,7 @@
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
-                        <h2>Blog Right Sidebar</h2>
+                        <h2>{{$t('SuccessfulCase')}}</h2>
                     </div>
                 </div>
             </div>

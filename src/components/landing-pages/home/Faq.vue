@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div id="faq">
         <!-- Start Page Title -->
         <div class="page-title-area">
             <div class="d-table">
@@ -78,6 +78,6 @@ export default {
                 }
             ]
         }
-    }
+    },
 }
 </script>

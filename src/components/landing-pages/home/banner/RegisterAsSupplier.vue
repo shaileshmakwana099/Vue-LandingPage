@@ -1,30 +1,72 @@
 <template>
         <div>
-            <div :style="rfqStep === 0 ? 'display:block': 'display:none' " class="con-tab-ejemplo">
-                <p style="color:#68D0F5">{{$t('RfqServiceFee')}}</p>
-                <b-form-group :label="$t('RfqRequiredInfo')" label-size="default" >
-                    <div class="col-md-5 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" v-model="isSelect">
-                        <label class="form-check-label" for="inlineRadio1">{{$t('Tvp')}}{{$t('TvpV')}}</label>
-                    </div>
-                    <div class="col-md-5 form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" v-model="isSelect">
-                        <label class="form-check-label" for="inlineRadio2">{{$t('Bud')}}</label>
-                    </div>
-                </b-form-group>
+            <div :style="step === 0 ? 'display:block': 'display:none' " class="con-tab-ejemplo custForm-height">
+                <p style="color:#68D0F5">{{$t('RfqWritingFee')}}</p>
 
                 <div class="form-group">
-                    <label>{{$t('ProjectName')}}</label>
+                    <label>{{$t('SupCompanmyName')}}</label>
                     <input type="email" class="form-control">
                 </div>
 
                 <div class="form-group">
-                    <label>{{$t('RfqCompanyName')}}</label>
+                    <label>{{$t('Authorizer')}}</label>
                     <input type="password" class="form-control">
                 </div>
 
-                <b-button class="btn btn-primary" @click="activeRfqStep(1)">{{$t('Next')}}</b-button>
+                <div class="form-group">
+                    <label>{{$t('AuthorizerPosition')}}</label>
+                    <input type="email" class="form-control">
+                </div>
             </div>
+            <div :style="step === 1 ? 'display:block': 'display:none' " class="con-tab-ejemplo custForm-height">
+
+                <div class="form-group">
+                    <label>{{$t('Email')}}</label>
+                    <input type="email" class="form-control" :placeholder="$t('LoginEmail')" >
+                </div>
+
+                <div class="form-group">
+                    <label>{{$t('DBiz')}}</label>
+                    <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>{{$t('Address')}}</label>
+                    <b-form-textarea />
+                </div>
+            </div>
+            <div :style="step === 2 ? 'display:block': 'display:none' " class="con-tab-ejemplo custForm-height">
+
+                <div class="form-group">
+                    <label>{{$t('Contact')}}</label>
+                    <input class="form-control">
+                </div>
+
+                <div class="form-group">
+                    <label>{{$t('CompanyRegistryNumber')}}</label>
+                    <input class="form-control">
+                </div>
+
+                <b-form-group label="Upload Company Registry Document" label-for="file" label-cols="5" label-size="sm">
+                        <b-form-file class="mt-2"  id="file" size="sm" v-model="file" />
+                </b-form-group>
+            </div>
+            <div :style="step === 3 ? 'display:block': 'display:none' " class="con-tab-ejemplo custForm-height">
+
+                <p>{{$t('PaymentInfo')}}</p>
+                <b-form-group :label="$t('BankName')">
+                    <input class="form-control"/>
+                </b-form-group>
+
+                <b-form-group :label="$t('BankAccountNo')">
+                    <input class="form-control" />
+                </b-form-group>
+
+                <b-form-group :label="$t('PaypalNo')">
+                    <input class="form-control"/>
+                </b-form-group>
+            </div>
+            <b-button class="btn btn-primary" @click="submit($t('ThanksSubmitRegTitle'), $t('ThanksSubmitRegContent'))">{{step === 3? $t('Submit') : $t('Next')}}</b-button>
         </div>
 </template>
 
@@ -33,12 +75,25 @@
         name: "RegisterAsSupplier",
         data(){
             return {
-                rfqStep: 0,
+                step: 0,
+                file: null,
+            }
+        },
+        methods:{
+            submit(title, content){
+                if (this.step === 3){
+                    this.$swal(title, content, "success")
+                    this.step = 0
+                    return
+                }
+                this.step ++
             }
         }
     }
 </script>
 
 <style scoped>
-
+    .custForm-height{
+        min-height: 340px;
+    }
 </style>

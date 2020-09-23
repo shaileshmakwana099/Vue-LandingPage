@@ -3,7 +3,7 @@
         <Banner></Banner>
         <Services></Services>
         <HowItWorks></HowItWorks>
-        <Faq id="faq"/>
+        <Faq />
         <Feadback></Feadback>
         <BlogSection />
 
@@ -35,6 +35,6 @@ export default {
         Faq,
         Feadback,
         BlogSection,
-    }
+    },
 }
 </script>

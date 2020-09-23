@@ -16,7 +16,7 @@ import VueSwal from 'vue-swal';
 import App from './App.vue'
 import './assets/style/custom.scss';
 import { router } from './router';
-import store from './store';
+import store from './store/store';
 
 import i18n from './i18n/1i8n';
 

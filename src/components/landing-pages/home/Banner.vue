@@ -9,7 +9,18 @@
                             <div class="hero-content">
                                 <h2>{{$t('BannerFormTxtOne')}}</h2>
                                 <h2 style="white-space: pre-line">{{$t('BannerFormTxtTwo')}}</h2>
-                                <p>{{$t('BannerPlatformTxt')}}</p>
+                                <b-row>
+                                    <b-col >
+                                        <span class="custom_span">{{$t('TvpV')}}</span>
+                                    </b-col>
+                                    <b-col>
+                                        <span class="custom_span">{{$t('Tvp')}}</span>
+                                    </b-col>
+                                    <b-col>
+                                        <span class="custom_span">{{$t('Bud')}}</span>
+                                    </b-col>
+                                </b-row>
+                                <p class="mt-2">{{$t('BannerPlatformTxt')}}</p>
                                 
                                 <a href="#" class="btn btn-primary">{{$t('QuoteNow')}}</a>
                             </div>
@@ -59,3 +70,17 @@ export default {
     },
 }
 </script>
+<style scoped>
+    .custom_span {
+        border:2px solid;
+        border-color: #72A9DB !important;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        color: #74AF4D;
+        display: inherit;
+        text-align: center;
+    }
+    .con-tab-ejemplo {
+        min-height: 500px;
+    }
+</style>

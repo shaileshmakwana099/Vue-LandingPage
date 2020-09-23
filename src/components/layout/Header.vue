@@ -16,7 +16,8 @@
                                 <router-link to="/" class="nav-link">{{ $t('Home') }}</router-link>
                             </li>
                             <li class="nav-item">
-                                <router-link to="/faq" class="nav-link">{{$t('FAQ')}}</router-link>
+<!--                                <router-link @click="gotoFaq" to="/faq" class="nav-link">{{$t('FAQ')}}</router-link>-->
+                                <a style="cursor: pointer" @click="gotoFaq">{{$t('FAQ')}}</a>
                             </li>
                             <li class="nav-item">
                                 <router-link to="/blog" class="nav-link">{{$t('Blog')}}</router-link>
@@ -66,10 +67,11 @@
                 }
             })
         },
-
-        computed: {
-            shoppingCart(){
-                return this.$store.state.cart;
+        methods:{
+            gotoFaq(){
+                if (this.$router.currentRoute.path !== "/"){
+                    this.$router.push('/')
+                }
             }
         }
     }

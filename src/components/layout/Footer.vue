@@ -30,7 +30,7 @@
                     <div class="single-footer-widget">
                         <h3>Support</h3>
                         <ul class="list">
-                            <li><router-link to="/faq">{{$t('FAQ')}}</router-link> </li>
+                            <li><router-link to="/">{{$t('FAQ')}}</router-link> </li>
                             <li><a href="#">{{$t('PrivacyPolicy')}}</a></li>
                             <li><a href="#">{{$t('Terms')}}</a></li>
                             <li><a href="#">{{$t('ContactUs')}}</a></li>
@@ -59,9 +59,7 @@
 </template>
 
 <script>
-import BackToTop from 'vue-backtotop'
 export default {
     name: 'Footer',
-    components: { BackToTop }
 }
 </script>
