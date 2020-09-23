@@ -305,3 +305,9 @@
         name: 'Blog'
     }
 </script>
+
+<style scoped>
+    /*.page-title-area {*/
+    /*    padding-bottom: 0px*/
+    /*}*/
+</style>

@@ -5,7 +5,7 @@
             <div class="d-table">
                 <div class="d-table-cell">
                     <div class="container">
-                        <h2>About Us</h2>
+                        <h2>{{$t('AboutUs')}}</h2>
                     </div>
                 </div>
             </div>
@@ -27,13 +27,13 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 col-md-12">
                         <div class="agency-about-img">
-                            <img src="../../assets/img/agency-image/about-img.jpg" alt="image">
+                            <img src="../../assets/img/about-us1.jpg" alt="image">
                         </div>
                     </div>
 
                     <div class="col-lg-6 col-md-12">
                         <div class="agency-about-content">
-                            <span class="sub-title">About Us</span>
+                            <span class="sub-title">{{$t('AboutUs')}}</span>
                             <h2>Engaging New Audiences Through Smart Approach</h2>
                             <div class="bar"></div>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -85,5 +85,13 @@
 <script>
     export default {
         name: 'AboutUs',
+        data(){
+            return {
+
+            }
+        }
     }
 </script>
+<style scoped >
+
+</style>

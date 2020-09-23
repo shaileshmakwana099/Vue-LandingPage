@@ -48,7 +48,23 @@ export default {
         BlogTitle: 'Latest news about government funding',
         BlogSubTitle: 'We will regularly provide news about government funding, such as technology vouchers (TVP), special funds (BUD).',
         CallSectionTxt: "Still want to wait for your supplier's offer?",
-        InviteNow: 'Invite Now'
+        InviteNow: 'Invite Now',
+        ContactUs: 'Contact Us',
+        Email: 'Email',
+        LoginEmail: 'email (also for login)',
+        ContactName: 'Contact Name',
+        ContactNumber: 'Contact Number',
+        ProjectBudgetHKD: 'Project Budget HKD (Optional)',
+        From: 'From',
+        To: 'To',
+        Remark:  'Remark',
+        RequestedQtyOfSupplier: 'Requested Qty of Supplier (HK$100/unit)',
+        GrandTotal: 'Grand Total: HK$ ',
+        Address: 'Address',
+        ProjectDetail: 'please state the detailed project scope',
+        Submit: 'Submit',
+        ThanksSubmitTitle: 'Thanks for your Submitting',
+        ThanksSubmitContent: 'We sent a verification email to your email address.'
     },
     hk: {
         Home: '首頁',
@@ -99,6 +115,22 @@ export default {
         BlogTitle: '最新關於政府資助消息',
         BlogSubTitle: '我們會定時提供有關政府資助的消息，例如科技券 (TVP)﹑專項基金 (BUD)。',
         CallSectionTxt: '還想慢慢苦等你的供應商的報價?',
-        InviteNow: '立即邀請'
+        InviteNow: '立即邀請',
+        ContactUs: '联系我们',
+        Email: '电子邮件',
+        LoginEmail: '电子邮件（也用于登录）',
+        ContactName: '联系人姓名',
+        ContactNumber: '联系电话',
+        ProjectBudgetHKD: '项目预算 HKD (可选的)',
+        From: '从',
+        To: '至',
+        Remark:  '备注',
+        RequestedQtyOfSupplier: '供应商要求数量 (HK$100/单元)',
+        GrandTotal: '累计: HK$ ',
+        Address: '地址',
+        ProjectDetail: '请说明详细的项目范围',
+        Submit: '提交',
+        ThanksSubmitTitle: '感谢您的提交',
+        ThanksSubmitContent: '我们已将验证电子邮件发送到您的电子邮件地址。'
     }
 }

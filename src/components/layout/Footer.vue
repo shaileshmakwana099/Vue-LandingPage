@@ -18,11 +18,10 @@
                     <div class="single-footer-widget pl-5">
                         <h3>Company</h3>
                         <ul class="list">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Services</a></li>
-                            <li><a href="#">Features</a></li>
-                            <li><a href="#">Our Pricing</a></li>
-                            <li><a href="#">Latest News</a></li>
+                            <li><router-link to="/">{{ $t('Home') }}</router-link></li>
+                            <li><router-link to="/blog">{{$t('Blog')}}</router-link></li>
+                            <li><router-link to="/successful-case">{{$t('SuccessfulCase')}}</router-link></li>
+                            <li><router-link to="/about-us">{{$t('AboutUs')}}</router-link></li>
                         </ul>
                     </div>
                 </div>
@@ -31,29 +30,10 @@
                     <div class="single-footer-widget">
                         <h3>Support</h3>
                         <ul class="list">
-                            <li><a href="#">FAQ's</a></li>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms & Condition</a></li>
-                            <li><a href="#">Community</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-footer-widget">
-                        <h3>Address</h3>
-                        
-                        <ul class="footer-contact-info">
-                            <li><feather type="map-pin"></feather> 27 Division St, New York, NY 10002, USA</li>
-                            <li><feather type="mail"></feather> Email: <a href="#">startp@gmail.com</a></li>
-                            <li><feather type="phone-call"></feather> Phone: <a href="#">+ (321) 984 754</a></li>
-                        </ul>
-                        <ul class="social-links">
-                            <li><a href="#" class="facebook"><feather type="facebook"></feather></a></li>
-                            <li><a href="#" class="twitter"><feather type="twitter"></feather></a></li>
-                            <li><a href="#" class="instagram"><feather type="instagram"></feather></a></li>
-                            <li><a href="#" class="linkedin"><feather type="linkedin"></feather></a></li>
+                            <li><router-link to="/faq">{{$t('FAQ')}}</router-link> </li>
+                            <li><a href="#">{{$t('PrivacyPolicy')}}</a></li>
+                            <li><a href="#">{{$t('Terms')}}</a></li>
+                            <li><a href="#">{{$t('ContactUs')}}</a></li>
                         </ul>
                     </div>
                 </div>

@@ -18,22 +18,15 @@
                         <div class="col-lg-5 offset-lg-1">
                             <div class="banner-form ml-3">
                                 <form>
-                                    <div class="form-group">
-                                        <label>Username</label>
-                                        <input type="text" class="form-control" placeholder="Enter username">
-                                    </div>
 
-                                    <div class="form-group">
-                                        <label>Email</label>
-                                        <input type="email" class="form-control" placeholder="Enter your email">
-                                    </div>
-
-                                    <div class="form-group">
-                                        <label>Password</label>
-                                        <input type="password" class="form-control" placeholder="Create a password">
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">Register Now</button>
+                                        <vs-tabs>
+                                            <vs-tab :label="$t('RFQ')">
+                                                <RFQ />
+                                            </vs-tab>
+                                            <vs-tab :label="$t('RegisterAsSupplier')">
+                                                <register-as-supplier />
+                                            </vs-tab>
+                                        </vs-tabs>
                                 </form>
                             </div>
                         </div>
@@ -55,7 +48,14 @@
 </template>
 
 <script>
+    import RFQ from './banner/RFQ.vue'
+    import RegisterAsSupplier from "./banner/RegisterAsSupplier";
+
 export default {
-    name: 'Banner'
+    name: 'Banner',
+    components:{
+        RegisterAsSupplier,
+        RFQ
+    },
 }
 </script>

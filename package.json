@@ -25,6 +25,7 @@
     "vue-odometer": "^1.0.2",
     "vue-router": "^3.1.5",
     "vue-slick": "^1.1.15",
+    "vue-swal": "^1.0.0",
     "vue-toasted": "^1.1.27",
     "vuesax": "^3.12.2",
     "vuex": "^3.1.2"
@@ -49,7 +50,9 @@
       "plugin:vue/essential",
       "eslint:recommended"
     ],
-    "rules": {},
+    "rules": {
+      "no-console": "off"
+    },
     "parserOptions": {
       "parser": "babel-eslint"
     }

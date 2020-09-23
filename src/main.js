@@ -10,6 +10,9 @@ import Toasted from 'vue-toasted';
 import Vuesax from 'vuesax';
 import 'vuesax/dist/vuesax.css'; // Vuesax
 
+//Vue-Swal
+import VueSwal from 'vue-swal';
+
 import App from './App.vue'
 import './assets/style/custom.scss';
 import { router } from './router';
@@ -26,6 +29,7 @@ Vue.use(vWow);
 Vue.use(VueCarousel);
 Vue.use(Toasted)
 Vue.use(Vuesax);
+Vue.use(VueSwal)
 
 new Vue({
   store,
