@@ -80,7 +80,4 @@ export default {
         display: inherit;
         text-align: center;
     }
-    .con-tab-ejemplo {
-        min-height: 500px;
-    }
 </style>
