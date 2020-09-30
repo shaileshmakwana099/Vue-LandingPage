@@ -32,8 +32,11 @@
                     </b-collapse>
                     <div class="others-option">
                         <i18n />
-                        <a href="#" class="btn btn-light" style="margin-left: 10px">{{$t('RFQ')}}</a>
+                        <a href="#" @click="RfqActive = !RfqActive" class="btn btn-light" style="margin-left: 10px">{{$t('RFQ')}}</a>
                         <a href="#" class="btn btn-primary">{{$t('Login')}}</a>
+                        <b-modal v-model="RfqActive" style="padding-top: 150px;">
+                            <RfqForm />
+                        </b-modal>
                     </div>
                 </nav>
             </div>
@@ -44,16 +47,17 @@
 
 <script>
     import i18n from './i18n'
-
+    import RfqForm from "../landing-pages/RfqForm";
     export default {
         name: 'Header',
         data(){
             return {
-                isSticky: false
+                isSticky: false,
+                RfqActive: false
             }
         },
         components:{
-          i18n
+          i18n, RfqForm
         },
         mounted() {
             const that = this;
@@ -76,3 +80,6 @@
         }
     }
 </script>
+<style scoped>
+
+</style>
