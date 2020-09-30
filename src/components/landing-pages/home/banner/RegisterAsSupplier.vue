@@ -1,7 +1,6 @@
 <template>
         <div>
             <div :style="step === 0 ? 'display:block': 'display:none' " class="con-tab-ejemplo custForm-height">
-                <p style="color:#68D0F5">{{$t('RfqWritingFee')}}</p>
 
                 <div class="form-group">
                     <label>{{$t('SupCompanmyName')}}</label>
@@ -67,6 +66,8 @@
                 </b-form-group>
             </div>
             <b-button class="btn btn-primary" @click="submit($t('ThanksSubmitRegTitle'), $t('ThanksSubmitRegContent'))">{{step === 3? $t('Submit') : $t('Next')}}</b-button>
+            <p style="color:#c679e3">{{$t('RfqWritingFee')}}</p>
+
         </div>
 </template>
 
@@ -92,8 +93,16 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
     .custForm-height{
         min-height: 340px;
+    }
+
+    .form-group {
+    label {
+        font-size: 22px;
+        color: #c679e3;
+        font-weight: 600;
+    }
     }
 </style>

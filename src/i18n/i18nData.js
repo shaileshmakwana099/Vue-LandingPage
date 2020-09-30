@@ -90,7 +90,7 @@ export default {
         RfqRequiredInfo : '需要報價的政府資料項目',
         RfqServiceFee : '我們只收取$600/報價表的平台服務費',
         RfqWritingFee : '成為供應商，我們會向你支付$300/報價作文書費用',
-        Bud: 'BUD 專項基',
+        Bud: 'BUD專項基',
         Tvp: 'TVP',
         TvpV: '科技券',
         BannerFormTxtOne: '免煩惱﹑快至2小時',

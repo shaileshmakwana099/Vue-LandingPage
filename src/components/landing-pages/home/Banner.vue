@@ -74,8 +74,10 @@ export default {
     .custom_span {
         border:2px solid;
         border-color: #72A9DB !important;
-        padding-top: 1px;
-        padding-bottom: 1px;
+        opacity: 0.7;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        border-radius: 20px;
         color: #74AF4D;
         display: inherit;
         text-align: center;
