@@ -9,7 +9,7 @@
                             <div class="hero-content">
                                 <h2>{{$t('BannerFormTxtOne')}}</h2>
                                 <h2 style="white-space: pre-line">{{$t('BannerFormTxtTwo')}}</h2>
-                                <b-row>
+                                <b-row class="pt-4 pb-4">
                                     <b-col >
                                         <span class="custom_span">{{$t('TvpV')}}</span>
                                     </b-col>
@@ -20,7 +20,7 @@
                                         <span class="custom_span">{{$t('Bud')}}</span>
                                     </b-col>
                                 </b-row>
-                                <p class="mt-2">{{$t('BannerPlatformTxt')}}</p>
+                                <p>{{$t('BannerPlatformTxt')}}</p>
                                 
                                 <a href="#" class="btn btn-primary">{{$t('QuoteNow')}}</a>
                             </div>

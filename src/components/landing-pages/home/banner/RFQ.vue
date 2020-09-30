@@ -1,7 +1,7 @@
 <template>
 <div>
     <div :style="rfqStep === 0 ? 'display:block': 'display:none' " class="con-tab-ejemplo custForm-height">
-            <b-form-group :label="$t('RfqRequiredInfo')" label-size="default" >
+            <b-form-group :label="$t('RfqRequiredInfo')" label-size="default" label-class="pb-2">
                 <div class="col-md-5 form-check form-check-inline">
                     <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="tvp" v-model="isSelect" >
                     <label class="form-check-label" for="inlineRadio1">{{$t('Tvp')}}{{$t('TvpV')}}</label>
