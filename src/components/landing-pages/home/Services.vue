@@ -4,6 +4,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>{{$t('WhyUsRowOne')}}</h2>
+                <h2>{{$t('WhyUsRowOneTwo')}}</h2>
                 <div class="bar"></div>
                 <p>{{$t('WhyUsRowTwo')}}</p>
             </div>
@@ -65,5 +66,9 @@
     }
     .Service-h-b {
         min-height: 354px;
+    }
+    h3 {
+        color: #c679e3;
+        font-weight: 600;
     }
 </style>
