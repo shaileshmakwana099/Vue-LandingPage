@@ -62,4 +62,17 @@ export default {
     .blog-post-content {
         min-height: 225px;
     }
+    h2{
+        font-size: 45px;
+        font-weight: 600;
+        color: #c679e3;
+    }
+    h3 a{
+        color: #c679e3;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    p {
+        margin-top: 0.5rem !important;
+    }
 </style>

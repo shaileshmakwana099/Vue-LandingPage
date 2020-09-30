@@ -317,7 +317,6 @@ label {
 .section-title {
     text-align: center;
     margin-bottom: 60px;
-
     h2 {
         margin-bottom: 0;
         text-transform: capitalize;
@@ -3422,10 +3421,10 @@ Page Title CSS
 .page-title-area {
     position: relative;
     z-index: 1;
-    background: transparent url(../img/banner-bg1.jpg) right top no-repeat;
+    //background: transparent url(../img/banner-bg1.jpg) right top no-repeat;
     padding: {
-        top: 190px;
-        bottom: 100px;
+        top: 0px;
+        bottom: 0px;
     }
     text-align: center;
 
@@ -3443,7 +3442,7 @@ FAQ CSS
 =================================================*/
 .faq-accordion {
     box-shadow: 0 0 18px 0 rgba(0, 0, 0, 0.08);
-    padding: 60px;
+    padding: 25px;
     background: $white-color;
     border-radius: 10px;
 

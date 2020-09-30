@@ -25,10 +25,10 @@
 		<section class="faq-area ptb-80">
 			<div class="container">
                 <vs-row>
-                    <vs-col class="col-md-4" style="align-self:center">
+                    <vs-col class="col-md-6" style="align-self:center">
                         <img src="../../../assets/img/faq1.jpg" alt="image"/>
                     </vs-col>
-                    <vs-col class="col-md-8">
+                    <vs-col class="col-md-6">
                         <div class="faq-accordion">
                             <VueFaqAccordion
                                     :items="myItems"

@@ -306,8 +306,17 @@
     }
 </script>
 
-<style scoped>
-    /*.page-title-area {*/
-    /*    padding-bottom: 0px*/
-    /*}*/
+<style lang="scss" scoped>
+    .blog-post-content {
+        h3 {
+            a{
+                color: #c679e3;
+                font-size: 20px;
+                line-height: 30px;
+            }
+        }
+        p {
+            margin-top: 0.5rem !important;
+        }
+    }
 </style>
