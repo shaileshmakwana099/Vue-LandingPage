@@ -82,4 +82,8 @@ export default {
         display: inherit;
         text-align: center;
     }
+    .main-banner {
+        padding-top: 150px;
+        padding-bottom: 70px;
+    }
 </style>
