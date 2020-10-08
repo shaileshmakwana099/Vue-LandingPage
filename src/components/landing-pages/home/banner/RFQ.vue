@@ -67,7 +67,7 @@
             </b-form-group>
             <p style="font-size: 19px; color: #000000" >{{$t('GrandTotal')}} {{dataTotal}}</p>
     </div>
-    <p align="center" >立即付款並提交項目要求</p>
+    <p align="center">{{rfqStep === 3 ? '立即付款並提交項目要求' : null}}</p>
     <b-button v-if="rfqStep !== 3" class="btn btn-primary" @click="submit($t('ThanksSubmitRfqTitle'), $t('ThanksSubmitRfqContent'))">{{rfqStep === 3? $t('Submit') : $t('Next')}}</b-button>
     <vs-row v-else class="mb-2" vs-justify="center">
         <a href="#" @click="submit($t('ThanksSubmitRfqTitle'), $t('ThanksSubmitRfqContent'))">
