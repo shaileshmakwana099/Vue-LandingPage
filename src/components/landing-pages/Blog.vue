@@ -70,7 +70,7 @@
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 
-                                        <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather> </a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}}<feather type="arrow-right"></feather> </a>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +94,7 @@
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 
-                                        <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather> </a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <feather type="arrow-right"></feather> </a>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 
-                                        <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather> </a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <feather type="arrow-right"></feather> </a>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +142,7 @@
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 
-                                        <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather> </a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <feather type="arrow-right"></feather> </a>
                                     </div>
                                 </div>
                             </div>
@@ -166,7 +166,7 @@
 
                                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</p>
 
-                                        <a href="#" class="read-more-btn">Read More <feather type="arrow-right"></feather> </a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <feather type="arrow-right"></feather> </a>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +176,7 @@
                                     <nav aria-label="Page navigation">
                                         <ul class="pagination justify-content-center">
 
-                                            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">{{$t('Prev')}}</a></li>
 
                                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
 
@@ -184,7 +184,7 @@
 
                                             <li class="page-item"><a class="page-link" href="#">3</a></li>
 
-                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">{{$t('Next')}}</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -198,14 +198,14 @@
                                 <form class="search-form">
                                     <label>
                                         <span class="screen-reader-text">Search for:</span>
-                                        <input type="search" class="search-field" placeholder="Search...">
+                                        <input type="search" class="search-field" :placeholder="$t('Search')">
                                     </label>
                                     <button type="submit"><feather type="search"></feather></button>
                                 </form>
                             </section>
 
                             <section class="widget widget_startp_posts_thumb">
-                                <h3 class="widget-title">Popular Posts</h3>
+                                <h3 class="widget-title">{{$t('PopularPosts')}}</h3>
 
                                 <article class="item">
                                     <a href="#" class="thumb">
@@ -245,7 +245,7 @@
                             </section>
 
                             <section class="widget widget_categories">
-                                <h3 class="widget-title">Categories</h3>
+                                <h3 class="widget-title">{{$t('Categories')}}</h3>
 
                                 <ul>
                                     <li><a href="#">Business</a></li>
@@ -257,7 +257,7 @@
                             </section>
 
                             <section class="widget widget_archive">
-                                <h3 class="widget-title">Archives</h3>
+                                <h3 class="widget-title">{{$t('Archives')}}</h3>
 
                                 <ul>
                                     <li><a href="#">May 2019</a></li>
@@ -267,7 +267,7 @@
                             </section>
 
                             <section class="widget widget_meta">
-                                <h3 class="widget-title">Meta</h3>
+                                <h3 class="widget-title">{{$t('Meta')}}</h3>
 
                                 <ul>
                                     <li><a href="#">Log in</a></li>
@@ -278,7 +278,7 @@
                             </section>
 
                             <section class="widget widget_tag_cloud">
-                                <h3 class="widget-title">Tags</h3>
+                                <h3 class="widget-title">{{$t('Tags')}}</h3>
 
                                 <div class="tagcloud">
                                     <a href="#">IT <span class="tag-link-count"> (3)</span></a>

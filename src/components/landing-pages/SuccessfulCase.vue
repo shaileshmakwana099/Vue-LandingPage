@@ -41,7 +41,7 @@
                                             <li>August 15, 2019</li>
                                         </ul>
                                         <h3><a href="#">The security risks of changing package owners</a></h3>
-                                        <a href="#" class="read-more-btn">Read More <i data-feather="plus-circle"></i></a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}}<i data-feather="plus-circle"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -61,7 +61,7 @@
                                         </ul>
                                         <h3><a href="#">Tips to Protecting Your Business and Family</a></h3>
 
-                                        <a href="#" class="read-more-btn">Read More <i data-feather="plus-circle"></i></a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <i data-feather="plus-circle"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                                         </ul>
                                         <h3><a href="#">Protect Your Workplace from Cyber Attacks</a></h3>
 
-                                        <a href="#" class="read-more-btn">Read More <i data-feather="plus-circle"></i></a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <i data-feather="plus-circle"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -100,7 +100,7 @@
                                             <li>August 15, 2019</li>
                                         </ul>
                                         <h3><a href="#">The security risks of changing package owners</a></h3>
-                                        <a href="#" class="read-more-btn">Read More <i data-feather="plus-circle"></i></a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <i data-feather="plus-circle"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -120,7 +120,7 @@
                                         </ul>
                                         <h3><a href="#">Tips to Protecting Your Business and Family</a></h3>
 
-                                        <a href="#" class="read-more-btn">Read More <i data-feather="plus-circle"></i></a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <i data-feather="plus-circle"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -140,7 +140,7 @@
                                         </ul>
                                         <h3><a href="#">Protect Your Workplace from Cyber Attacks</a></h3>
 
-                                        <a href="#" class="read-more-btn">Read More <i data-feather="plus-circle"></i></a>
+                                        <a href="#" class="read-more-btn">{{$t('ReadMore')}} <i data-feather="plus-circle"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -150,7 +150,7 @@
                                     <nav aria-label="Page navigation">
                                         <ul class="pagination justify-content-center">
 
-                                            <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">{{$t('Prev')}}</a></li>
 
                                             <li class="page-item active"><a class="page-link" href="#">1</a></li>
 
@@ -158,7 +158,7 @@
 
                                             <li class="page-item"><a class="page-link" href="#">3</a></li>
 
-                                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">{{$t('Next')}}</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -172,14 +172,14 @@
                                 <form class="search-form">
                                     <label>
                                         <span class="screen-reader-text">Search for:</span>
-                                        <input type="search" class="search-field" placeholder="Search...">
+                                        <input type="search" class="search-field" :placeholder="$t('Search')">
                                     </label>
-                                    <button type="submit"><i data-feather="search"></i></button>
+                                    <button type="submit"><feather type="search"></feather></button>
                                 </form>
                             </section>
 
                             <section class="widget widget_startp_posts_thumb">
-                                <h3 class="widget-title">Popular Posts</h3>
+                                <h3 class="widget-title">{{$t('PopularPosts')}}</h3>
 
                                 <article class="item">
                                     <a href="#" class="thumb">
@@ -219,7 +219,7 @@
                             </section>
 
                             <section class="widget widget_categories">
-                                <h3 class="widget-title">Categories</h3>
+                                <h3 class="widget-title">{{$t('Categories')}}</h3>
 
                                 <ul>
                                     <li><a href="#">Business</a></li>
@@ -231,7 +231,7 @@
                             </section>
 
                             <section class="widget widget_archive">
-                                <h3 class="widget-title">Archives</h3>
+                                <h3 class="widget-title">{{$t('Archives')}}</h3>
 
                                 <ul>
                                     <li><a href="#">May 2019</a></li>
@@ -241,7 +241,7 @@
                             </section>
 
                             <section class="widget widget_tag_cloud">
-                                <h3 class="widget-title">Tags</h3>
+                                <h3 class="widget-title">{{$t('Tags')}}</h3>
 
                                 <div class="tagcloud">
                                     <a href="#">IT <span class="tag-link-count"> (3)</span></a>

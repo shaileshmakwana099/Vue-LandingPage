@@ -26,6 +26,7 @@ export default {
         RfqCompanyName: 'Company Name',
         SupCompanmyName: 'Company name (must be the same as BR)',
         CompanyRegistryNumber: 'Company Registry Number',
+        Prev: 'Prev',
         Next: 'Next',
         WhyUsRowOne: 'Have to communicate with many other government-funded IT providers? You would rather spend time in business.',
         WhyUsRowTwo: 'For example, if you are about to apply for a government technology voucher, you need 5 quotations for comparison. Even if you have contacted multiple suppliers. You have to wait hard...',
@@ -76,7 +77,12 @@ export default {
         BankName: 'Bank Name',
         BankAccountNo: 'Bank Account No.',
         PaypalNo: 'Paypal No. (Optional)',
-
+        PopularPosts: 'Popular Posts',
+        Categories: 'Categories',
+        Archives: 'Archives',
+        Meta: 'Meta',
+        Tags: 'Tags',
+        Search: 'Search',
     },
     hk: {
         Home: '首頁',
@@ -105,6 +111,7 @@ export default {
         CompanyRegistryNumber: '商業登記證號碼',
         Authorizer: '授權人',
         AuthorizerPosition: '授權人職位',
+        Prev: '上一步',
         Next: '下一步',
         WhyUsRowOne: '還要跟其他多位政府資助IT供應商溝通?',
         WhyUsRowOneTwo: '你寧願花時間在生意上.',
@@ -156,5 +163,12 @@ export default {
         BankName: '銀行名稱',
         BankAccountNo: '銀行帳號',
         PaypalNo: 'Paypal帳號 (可選填)',
+        PopularPosts: '熱門帖子',
+        Categories: '分類',
+        Archives: '檔案',
+        Meta: 'Meta',
+        Tags: '标签',
+        ReadMore: '閱讀更多',
+        Search: '搜索...'
     }
 }

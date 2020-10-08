@@ -37,12 +37,6 @@
                         </ul>
                     </div>
                 </div>
-
-                <div class="col-lg-12 col-md-12">
-                    <div class="copyright-area">
-                        <p>Copyright &copy;2020 Pasona. All Rights Reserved</p>
-                    </div>
-                </div>
             </div>
         </div>
 
