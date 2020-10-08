@@ -16,7 +16,6 @@
                                 <router-link to="/" class="nav-link">{{ $t('Home') }}</router-link>
                             </li>
                             <li class="nav-item">
-<!--                                <router-link @click="gotoFaq" to="/faq" class="nav-link">{{$t('FAQ')}}</router-link>-->
                                 <a style="cursor: pointer" @click="gotoFaq">{{$t('FAQ')}}</a>
                             </li>
                             <li class="nav-item">
