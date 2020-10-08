@@ -74,7 +74,7 @@
             <img :src="paypal_img" width="275px"/>
         </a>
     </vs-row>
-    <p :style="rfqStep === 3? 'color:#6084a4' : 'color:#c679e3;'">{{rfqStep === 3 ? '供應商配對會於系統自動進行，我們會要求應邀的供應商於兩個工作天內回覆報價。客戶如收到供應商的報價有不正確的地方，可於後台提出問題，平台會跟進。' : $t('RfqServiceFee')}}</p>
+    <p :style="rfqStep === 3? 'color:#6084a4' : 'color:#c679e3; margin-bottom:88.25px'">{{rfqStep === 3 ? '供應商配對會於系統自動進行，我們會要求應邀的供應商於兩個工作天內回覆報價。客戶如收到供應商的報價有不正確的地方，可於後台提出問題，平台會跟進。' : $t('RfqServiceFee')}}</p>
 </div>
 
 </template>
@@ -123,7 +123,7 @@
 
 <style lang="scss" scoped>
     .custForm-height {
-        min-height: 340px
+        min-height: 337px
     }
     .form-check-label {
         color: #0e314c !important;

@@ -59,7 +59,7 @@
                 </b-form-group>
             </div>
             <b-button class="btn btn-primary" @click="submit($t('ThanksSubmitRegTitle'), $t('ThanksSubmitRegContent'))">{{step === 3? $t('Submit') : $t('Next')}}</b-button>
-            <p style="color:#c679e3">{{$t('RfqWritingFee')}}</p>
+            <p style="color:#c679e3; margin-bottom:88.25px;">{{$t('RfqWritingFee')}}</p>
 
         </div>
 </template>
@@ -88,7 +88,7 @@
 
 <style lang="scss" scoped>
     .custForm-height{
-        min-height: 340px;
+        min-height: 337px;
     }
 
     .form-group {
