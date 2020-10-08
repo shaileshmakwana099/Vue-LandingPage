@@ -36,6 +36,7 @@ export default {
 
   mounted() {
     this.currentUrl = window.location.pathname;
+    this.$i18n.locale = 'hk';
     setTimeout(() => {
       this.isLoading = false
     }, 2000);

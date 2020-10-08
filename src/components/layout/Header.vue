@@ -31,7 +31,6 @@
                         </ul>
                     </b-collapse>
                     <div class="others-option">
-                        <i18n />
                         <a href="#" @click="RfqActive = !RfqActive" class="btn btn-light" style="margin-left: 10px">{{$t('RFQ')}}</a>
                         <a href="#" class="btn btn-primary">{{$t('Login')}}</a>
                         <b-modal v-model="RfqActive" style="padding-top: 150px;">
@@ -46,7 +45,6 @@
 </template>
 
 <script>
-    import i18n from './i18n'
     import RfqForm from "../landing-pages/RfqForm";
     export default {
         name: 'Header',
@@ -57,7 +55,7 @@
             }
         },
         components:{
-          i18n, RfqForm
+         RfqForm
         },
         mounted() {
             const that = this;

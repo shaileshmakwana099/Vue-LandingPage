@@ -248,9 +248,9 @@ p {
 .btn {
     &.btn-secondary {
         text-transform: capitalize;
-        border-radius: 0;
+        border-radius: 4px;
         background-color: $light-green-color;
-        padding: 13px 30px;
+        //padding: 13px 30px;
         box-shadow: 5px 5px 5px #a6f5be;
         margin: {
             right: 5px;
@@ -261,11 +261,11 @@ p {
             weight: 500;
         };
         &::before {
-            border-radius: 0;
+            border-radius: 4px;
             background: $purple-color;
         }
         &::after {
-            border-radius: 0;
+            border-radius: 4px;
             background: $purple-color;
         }
         &:not(:disabled):not(.disabled).active, &:not(:disabled):not(.disabled):active, .show>&.dropdown-toggle {
@@ -8681,4 +8681,9 @@ Checkout CSS
 }
 .vs-input--placeholder.normal {
     padding: .5rem!important;
+}
+.btn {
+    btn-secondary {
+
+    }
 }

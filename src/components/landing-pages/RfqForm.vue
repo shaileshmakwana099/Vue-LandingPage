@@ -46,7 +46,7 @@
                     <b-col cols="1" align-self="center">
                         <span >To</span>
                     </b-col>
-                    <b-col cols="4">
+                    <b-col cols="3">
                         <vs-input style="width: 100%" placeholder="100000" v-model="budgetTo" />
                     </b-col>
                 </b-row>
@@ -55,10 +55,8 @@
                     <b-col >
                         <span>Requested Qty of Supplier</span>
                     </b-col>
-                    <b-col >
-                        <vs-row  vs-justify="center">
-                            <vs-input-number class="w-2/5"  v-model="qty" />
-                        </vs-row>
+                    <b-col align-self="center" cols="2">
+                        <input type="number" style="width: 100%; text-align: right;" min="0" v-model="qty" />
                     </b-col>
                     <b-col align-self="center" >
                         <span>(HK$100/unit)</span>
