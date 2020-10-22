@@ -37,6 +37,11 @@
                         </ul>
                     </div>
                 </div>
+                <div class="col-lg-12 col-md-12">
+                    <div class="copyright-area">
+                        <p>2020 Quote</p>
+                    </div>
+                </div>
             </div>
         </div>
 
