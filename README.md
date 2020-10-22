@@ -1,6 +1,6 @@
 # pasona
 
-For example:
+Preview:
 
 ![demo](./landing.gif)
 
