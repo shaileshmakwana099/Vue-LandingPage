@@ -1,5 +1,10 @@
 # pasona
 
+For example:
+
+![demo](./landing.gif)
+
+
 ## Project setup 
 ```
 npm install
